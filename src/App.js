@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <Dashboard gutter={10} row={3} col={5} animationClassOut="animated flipOutX" animationClassIn="animated flipInX">
         <Widget size="large">
-          <TestWidget interval="3000" color="green"/>
+          <TestWidget interval="5000" color="green"/>
         </Widget>
         <Widget size="normal">
           <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
