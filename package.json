@@ -1,0 +1,21 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bricks.js": "^1.8.0",
+    "masonry-layout": "^4.2.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-masonry-layout": "^0.2.3",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

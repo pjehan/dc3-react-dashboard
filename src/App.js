@@ -1,0 +1,51 @@
+import React, { Component } from 'react';
+import { Dashboard, Widget } from 'dc-react-dashboard';
+import ImageWidget from './components/widgets/ImageWidget';
+import TestWidget from './components/widgets/TestWidget';
+import VideoWidget from './components/widgets/VideoWidget';
+import 'animate.css';
+
+class App extends Component {
+
+  render() {
+    return (
+      <Dashboard gutter={10} row={3} col={5} animationClassOut="animated flipOutX" animationClassIn="animated flipInX">
+        <Widget size="large">
+          <TestWidget interval="3000" color="green"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="big">
+          <VideoWidget url="https://www.youtube.com/embed/hjIOMV3d4rE"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+        <Widget size="normal">
+          <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
+        </Widget>
+      </Dashboard>
+    );
+  }
+}
+
+export default App;
