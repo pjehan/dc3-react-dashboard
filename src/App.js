@@ -15,7 +15,7 @@ class App extends Component {
           <TestWidget interval="5000" color="green"/>
         </Widget>
         <Widget size="large">
-          <CinemaWidget interval="5000" color="#f5f5f5"/>
+          <CinemaWidget interval="8000" charactersOverview="110" apiKey="YOUR_API_KEY" color="#f5f5f5"/>
         </Widget>
         <Widget size="normal">
           <ImageWidget url="https://pbs.twimg.com/profile_images/910474947906154497/_Z4JoumF_400x400.jpg"/>
