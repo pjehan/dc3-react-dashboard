@@ -102,36 +102,29 @@ class CinemaWidget extends Component {
             return response.json();
         })
         .then((responseJson) => {
-            const currentMovies = responseJson.results;
-            this.setState({ movies: currentMovies })
+            this.setState({ movies: responseJson.results })
         })
         .then(() => {
-            this.interval = setInterval(() => { this.getNextMovie()}, this.props.interval)
+            this.getNextMovie();
+            setInterval(() => this.props.animate().then(() => this.getNextMovie()), this.props.interval);
         })
+        .catch((error) => console.log(error))
     }
 
     getNextMovie() {
-        setTimeout(() => { this.fadeIn()}, 200)
-
         if (this.state.index == this.state.movies.length) {
             this.setState({ index: 0 })
         }
 
         const nextMovie = this.state.movies[this.state.index];
         this.setState({ displayedMovie: nextMovie, index: this.state.index + 1 })
-
-        setTimeout(() => { this.fadeOut()}, this.props.interval - 1000)
-    }
-
-    fadeOut() {
-        this.setState({ classNameFade: 'fadeOut' })
-    }
-
-    fadeIn() {
-        this.setState({ classNameFade: 'fadeIn' })
     }
 
     render() {
+        if(!this.state.displayedMovie) {
+          return (<div>Loading...</div>);
+        }
+
         const poster = "https://image.tmdb.org/t/p/w320" + this.state.displayedMovie.poster_path;
         const releaseDate = new Date(this.state.displayedMovie.release_date);
         var widgetOverview = new String(this.state.displayedMovie.overview).substr(0, this.props.charactersOverview) + "...";
