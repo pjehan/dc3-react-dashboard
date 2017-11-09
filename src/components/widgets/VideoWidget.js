@@ -20,7 +20,7 @@ class VideoWidget extends Component {
     switch (domain) {
       case 'www.youtube.com':
         var code = youtube_parser(this.props.url);
-        return (<iframe src={ 'https://www.youtube.com/embed/' + code + '?autoplay=0&loop=1&playlist=' + code } frameBorder="0" style={styles.video}></iframe>);
+        return (<iframe src={ 'https://www.youtube.com/embed/' + code + '?autoplay=1&loop=1&playlist=' + code } frameBorder="0" style={styles.video}></iframe>);
         break;
       default:
         return (<div>URL not supported!</div>);
