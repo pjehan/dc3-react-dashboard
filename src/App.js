@@ -7,8 +7,8 @@ import CinemaWidget from './components/widgets/CinemaWidget';
 import 'animate.css';
 import FacebookWidget from './components/widgets/FacebookWidget';
 const FacebookParameters = ({
-    AccessToken: '141025039980686|WIbGKZ-SBglRTurxFIn_hrO5L9s',        /* getaccesstoken of Facebook API */
-    AppSecretToken : '6ec93b27df5d9937c907f104377d1e94',    /* SecretToken of Facebook API */
+    AccessToken: 'AccessToken',        /* getaccesstoken of Facebook API */
+    AppSecretToken : 'SecretToken',    /* SecretToken of Facebook API */
     PageName : 'Digital Campus Rennes',          /* Name of the Facebook page */
     PageId : '532247756912168',            /* ID of the Facebook page */
     RefreshTime: 900,        /* Indicade refresh time of Facebook Widget in second */
