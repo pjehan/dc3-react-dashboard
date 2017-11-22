@@ -5,10 +5,12 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "dc-react-dashboard": "0.0.2",
-    "firebase": "^4.6.1",
-    "masonry-layout": "^4.2.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "fb-react-sdk": "^1.0.4",
+    "firebase": "^4.6.2",
+    "moment": "^2.19.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
     "react-masonry-layout": "^0.2.3",
     "react-scripts": "1.0.14"
   },

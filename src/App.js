@@ -8,6 +8,8 @@ import GalleryWidget from './components/widgets/GalleryWidget';
 import MessageWidget from './components/widgets/MessageWidget';
 import TestWidget from './components/widgets/TestWidget';
 import VideoWidget from './components/widgets/VideoWidget';
+import CinemaWidget from './components/widgets/CinemaWidget';
+import FacebookWidget from './components/widgets/FacebookWidget';
 import 'animate.css';
 
 const app = firebase.initializeApp(firebaseConfig);
@@ -16,7 +18,9 @@ const components = {
   test: TestWidget,
   gallery: GalleryWidget,
   video: VideoWidget,
-  message: MessageWidget
+  message: MessageWidget,
+  cinema: CinemaWidget,
+  facebook: FacebookWidget
 };
 
 class App extends Component {
